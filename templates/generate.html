@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Phishing URL Generator</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <img src="https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif" alt="Hacker Animation" class="hero-gif">
+    <h2>🎯 Your Phishing URL is Ready</h2>
+
+    <div class="url-box">
+      <a href="{{ url }}" target="_blank">{{ url }}</a>
+      <button onclick="window.location.href='/dashboard'" class="btn-dashboard">📊 Go to Dashboard</button>
+    </div>
+
+    <p class="disclaimer">⚠️ For simulation/testing use only. Do not use maliciously.</p>
+  </div>
+</body>
+</html>

