@@ -61,6 +61,23 @@ This is a Flask-based phishing simulation web application designed for education
     ├── login.html         # Generic login page
     └── skips_connect.html
 ```
+*You can add screenshots here to illustrate the application pages and features.*
+
+- Phishing URL Generator page
+ ![image](https://github.com/user-attachments/assets/1a977b30-bd10-4d74-8831-1aa69c1952b5)
+
+- Login simulation page
+- ![image](https://github.com/user-attachments/assets/b5af5fa4-2ae2-4d74-9781-fec7c5d6b995)
+![image](https://github.com/user-attachments/assets/671de493-56f3-49b8-94c1-368dfbf108a3)
+![image](https://github.com/user-attachments/assets/9b49587f-7c9a-4303-9579-27a250085350)
+![image](https://github.com/user-attachments/assets/670525a1-aa62-40d5-b157-b81dcb874dac)
+
+
+
+- Admin dashboard displaying captured credentials
+  ![image](https://github.com/user-attachments/assets/7fb0b9c9-a399-4126-8203-9c25acb09a9d)
+
+
 
 ## Security and Disclaimer
 - This application is for educational and testing purposes only.
